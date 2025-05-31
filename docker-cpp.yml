@@ -2,9 +2,9 @@ name: Docker C++ CI
 
 on:
   push:
-    branches: [ main, lab6-docker ]
+    branches: [ main, lab6-docker, master]
   pull_request:
-    branches: [ main, lab6-docker ]
+    branches: [ main, lab6-docker, master]
 
 jobs:
   build-and-test:
