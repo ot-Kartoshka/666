@@ -11,7 +11,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{36D5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{261E8594-7FDF-4E65-8BC3-1DDE577959E4}"
 	ProjectSection(SolutionItems) = preProject
-		docker-cpp.yml = docker-cpp.yml
+		.github\workflows\docker-cpp.yml = .github\workflows\docker-cpp.yml
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}"

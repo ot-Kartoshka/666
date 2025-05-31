@@ -2,9 +2,9 @@ name: Docker C++ CI
 
 on:
   push:
-    branches: [ main, lab2-docker ]
+    branches: [ main, lab6-docker, master]
   pull_request:
-    branches: [ main, lab2-docker ]
+    branches: [ main, lab6-docker, master]
 
 jobs:
   build-and-test:
@@ -17,7 +17,7 @@ jobs:
         uses: docker/setup-buildx-action@v2
 
       - name: Build Docker image
-        run: docker build -t lab2docker:latest .
+        run: docker build -t lab6docker:latest .
 
       - name: Run unit tests in Docker
-        run: docker run --rm lab2docker:latest ./build/test_lab_math
+        run: docker run --rm lab6docker:latest ./build/test_lab
