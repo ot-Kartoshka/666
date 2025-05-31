@@ -21,13 +21,13 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t ghcr.io/${{ github.repository }}:latest .
+        run: docker build -t ghcr.io/ot-kartoshka/666:latest .
 
       - name: Push Docker image
-        run: docker push ghcr.io/${{ github.repository }}:latest
+        run: docker push ghcr.io/ot-kartoshka/666:latest
 
       - name: Pull Docker image
-        run: docker pull ghcr.io/${{ github.repository }}:latest
+        run: docker pull ghcr.io/ot-kartoshka/666:latest
 
       - name: Run unit tests in Docker
-        run: docker run --rm ghcr.io/${{ github.repository }}:latest ./build/Test_lab
+        run: docker run --rm ghcr.io/ot-kartoshka/666:latest ./build/Test_lab
