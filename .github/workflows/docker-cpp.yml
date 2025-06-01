@@ -31,4 +31,4 @@ jobs:
         run: docker pull ghcr.io/ot-kartoshka/666:latest
 
       - name: Run unit tests in Docker
-        run: docker run --rm ghcr.io/ot-kartoshka/666:latest ./build/Test_lab
+        run: docker run --rm ghcr.io/ot-kartoshka/666:latest ./build/test_lab
